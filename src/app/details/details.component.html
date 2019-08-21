@@ -1,0 +1,27 @@
+<html>
+
+<body>
+
+<table id="customers">
+  <tr>
+    <th>Name</th>
+    <th>Gender</th>
+    <th>Skills</th>
+    <th>Location</th>
+    <th>Joining Date</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let emp of detailsEmployee">
+    <td>{{emp.name}}</td>
+    <td [ngClass] ="{myclass2 : true}">{{emp.gender}}</td>
+    <td>{{emp.skills}}</td>
+    <td>{{emp.currentlocation}}</td>
+    <td>{{emp.joiningdate | date}}</td>
+    <td><button mat-raised-button color="accent" (click)="ngEdit(emp)">Edit</button> 
+      <button mat-raised-button color="warn" style="margin-left: 20px" (click)="ngDelete(emp._id)">Delete</button></td>
+  </tr>
+</table>
+
+</body>
+</html>
+

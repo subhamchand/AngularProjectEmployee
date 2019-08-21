@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <form>
+            <div class="col-xs-8" class="form-group">
+                <mat-form-field class="example-full-width" style="margin: 10px">
+                    <input matInput placeholder="Type a Name" name="name" [(ngModel)] = 'name' autocomplete="off" >
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <h4>friend list</h4>
+                <p *ngFor="let person of (mygroup | filterkar:name )">{{person}}</p>
+            </div>
+        </form>
+    </div>
+</div>

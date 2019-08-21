@@ -1,0 +1,28 @@
+.topnav {
+    overflow: hidden;
+    background-color: aquamarine;
+  }
+
+  .search {
+    margin-top: 10px;
+    width: 220pt;
+    background-color: aliceblue;
+    border: solid;
+    border-color: aliceblue;
+    border-radius: 13px;
+  }
+
+  .heading{
+      background-color: aliceblue;
+      width: 90%;
+      margin: 0 auto;
+      line-height: 30px;
+  }
+  .body{
+    width: 90%;
+    margin: 0 auto;
+    height: 60px;
+    border-bottom: solid 2px;
+    border-bottom-color: beige;
+    text-align: initial;
+}

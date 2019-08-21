@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8">
+            <b>Existing Trouble Tickets</b><br>
+            <div>
+                <input type="text" class='search' placeholder="Search..">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 10px">
+    <div fxLayout="row" fxLayoutAlign="space-around center" class="heading">
+        <div fxFlex='20'>date</div>
+        <div fxFlex='60'>date</div>
+        <div fxFlex='20'>date</div>
+    </div>
+</div>
+<div>
+    <div fxLayout="row" fxLayoutAlign="start center" class="body" *ngFor="let data of Data">
+        <div fxFlex='20'>{{data.date}}</div>
+        <div fxFlex='60'>
+            <div>
+                {{data.ticketId}}
+            </div>
+            <div>
+                {{data.summary}}
+            </div>
+        </div >
+        <div fxFlex='20'>{{data.status}}</div>
+    </div>
+
+</div>
